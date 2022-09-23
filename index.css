@@ -1,0 +1,82 @@
+.bloc{
+    width: 100%;
+    height: 8%;
+    background-color: rgb(252, 55, 137);
+}
+.para{
+    color: white;
+    font-size: 40px;
+    justify-items: center;
+    align-items: center;
+    padding: 15px 0px 10px 20px;
+}
+
+.txt{
+    color: rgb(240, 11, 87);
+    padding: 5px 0px 5px 20px;
+    font-size: 40px;
+}
+.root{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    background-color: rgba(252, 249, 249, 0.836);
+    box-shadow: 0.1px 0.1px 0px 0px rgba(68, 67, 67, 0.582);
+}  
+.text{
+    margin: auto;
+    width: 85%;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.918);
+    padding: 13px 0px 13px 0px;
+    line-height: 25px;
+}
+.main{
+    width: 98%;
+    height: auto;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4%;
+   
+}
+.coupon{
+    text-align: center;
+    margin-top: 10px;
+    width: 25%;
+    height: 40px;
+}
+.inp{
+    width: 95%;
+    margin: auto;
+
+}
+.in{
+    width: 100%;
+    height: 40px;
+    padding: 10px 0px 10px 0px;
+    text-align:  20px start;
+}
+.end{
+    width: 95%;
+    margin: auto;
+
+}
+
+.btn1{
+    width: 20%;
+    height: 20px;
+}
+
+.btn2{
+    width: 20%;
+    height: 20px;
+    color: white;
+    background-color: rgb(240, 11, 87);
+    border: none;
+}
+
+::placeholder {
+    margin-left: 50px;
+}
