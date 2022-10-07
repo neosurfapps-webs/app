@@ -80,9 +80,7 @@ form{
     border: none;
 }
 
-::placeholder {
-    margin-left: 50px;
-}
+
 
 
 input[type=text], 
