@@ -1,6 +1,6 @@
 .bloc{
     width: 100%;
-    height: 8%;
+    height: 60px;
     background-color: rgb(252, 55, 137);
 }
 .para{
@@ -8,7 +8,7 @@
     font-size: 40px;
     justify-items: center;
     align-items: center;
-    padding: 15px 0px 10px 20px;
+    padding: 8px 0px 10px 20px;
 }
 
 .txt{
