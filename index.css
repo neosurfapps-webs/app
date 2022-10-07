@@ -68,6 +68,14 @@
     width: 100px;
     height: 40px;
     border-radius: 0px;
+     border: none;
+    background-color: white;
+}
+
+.ba{
+    border: 1px solid black;
+    width: 100px;
+    height: 40px;
 }
 
 .btn2{
